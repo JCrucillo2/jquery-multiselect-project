@@ -1,0 +1,50 @@
+.main-page {
+    display: flex;
+    .main-content {
+        width: 100%;
+        padding: $common-padding;
+    }
+    .sidebar {
+        min-width: 28.9rem;
+        border-left: 0.2rem solid $dark;
+        padding: $common-padding;
+        .sidebar-item-1,
+        .sidebar-item-2 {
+            margin-bottom: $common-margin;
+            h3 {
+                padding: $common-padding;
+                background-color: $primary;
+                text-align: center;
+                color: $light;
+                border-radius: 0.5rem;
+                margin-bottom: $common-margin;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+            ul {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                li {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .sidebar-item-2 {
+            ul {
+                display: block;
+                li {
+                    margin-bottom: 0.5rem;
+                    &::before {
+                        content: "-";
+                        font-weight: bold;
+                        margin-right: $common-margin;
+                    }
+                }
+            }
+        }
+    }
+}

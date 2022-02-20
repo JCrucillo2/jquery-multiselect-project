@@ -1,3 +1,5 @@
+@import "variables";
+
 :root,
 html {
     font-size: 62.5%;
@@ -8,6 +10,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     font-size: 16px; /* fallback */
+    background-color: $dark;
 }
 
 h1 {
@@ -30,5 +33,7 @@ h3 {
 
 .container {
     max-width: 160rem;
-    margin: 0 auto;
+    margin: 3rem auto;
+    background-color: $light;
+    border-radius: 0.5rem;
 }

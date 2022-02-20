@@ -17,21 +17,73 @@
         <!-- stylesheets -->
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/chosen.min.css" />
 
         <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/chosen.jquery.min.js"></script>
         <script src="./js/main.js" defer></script>
     </head>
     <body>
         <div class="container">
-            <header></header>
+            <header>
+                <h1>jQuery Basics</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
+            </header>
             <main>
-                <h1>Starter SASS Template</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis fugiat ipsa veritatis ducimus, maxime molestias
-                    quas minima recusandae, illum ipsum vitae odio perspiciatis
-                    quam aspernatur ex nulla repudiandae dicta? Necessitatibus.
-                </p>
+                <div class="main-page">
+                    <div class="main-content">
+                        <h2>Web Design Skills</h2>
+                        <form method="post">
+                            <select
+                                id="select-skills"
+                                class="selection"
+                                multiple=""
+                            >
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="React">React</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                            </select>
+                            <input
+                                type="submit"
+                                name="submit"
+                                id="submit"
+                                value="Submit"
+                            />
+                        </form>
+                        <div id="chosen-skills"></div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar-item-1">
+                            <h3>SideBar Heading</h3>
+                            <p>Sub Heading</p>
+                            <ul>
+                                <li><a href="#">Link 1</a></li>
+                                |
+                                <li><a href="#">Link 2</a></li>
+                                |
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-item-2">
+                            <h3>SideBar Heading</h3>
+                            <p>Sub Heading</p>
+                            <ul>
+                                <li><a href="#"> Link 1</a></li>
+                                <li><a href="#"> Link 2</a></li>
+                                <li><a href="#"> Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </main>
             <footer></footer>
         </div>

@@ -4,3 +4,26 @@
 @import "main";
 
 // styles
+.main-content {
+    h2 {
+        margin-bottom: $common-margin;
+    }
+    form {
+        .selection {
+            width: 30rem;
+        }
+    }
+    #submit {
+        padding: 0.7rem 1rem;
+        height: auto;
+        border: none;
+        background-color: $primary;
+        font-weight: bold;
+        color: $light;
+        cursor: pointer;
+        transition: linear 0.2s all;
+        &:hover {
+            background-color: $dark;
+        }
+    }
+}
